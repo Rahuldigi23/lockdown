@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  <style>
+    *{
+      font-family:nunito;
+    }
+    body{
+      background:linear-gradient(to right bottom,rgba(0,128,0,0.301),rgb(0,0,0) ), url(bv.jpg) no-repeat;
+      background-size: cover;
+    }
+    .mycard {
+      background-color: rgb(45, 47, 51);
+      width: 25%;
+      border-radius: 10px;
+      margin: 10% auto;
+      padding: 3%;
+      box-sizing: border-box;
+      height: 350px;
+      box-shadow: 3px 3px 15px solid black ;
+    }
+
+    img {
+      width: 30px;
+      margin-left: 56px;
+      margin-right: 5px;
+    }
+
+    .img {
+      font-size: 30px;
+      color: white;
+    }
+
+    .sign {
+      display: inline-block;
+      color: white;
+      padding: 7px;
+      margin-top: 10px;
+      margin-left: 30px;
+      cursor: pointer;
+    }
+
+    .my-input,
+    .my-btn {
+      display: block;
+      margin-top: 12px;
+      margin-left: auto;
+      margin-right: auto;
+
+      border-radius: 20px;
+      
+      padding: 8px;
+      border: none;
+      box-shadow: 3px 3px 5px solid black ;
+    }
+
+    .my-btn {
+      color: white;
+      background-color: rgb(81, 207, 81);
+      cursor: pointer;
+    }
+    .my-btn:hover{
+      transform: translateY(-10px);
+    }
+    .my-input:active{
+      background-color: yellow;
+      
+    }
+    .my-input:focus{
+      /* background-color: green; */
+      outline: solid;
+    }
+
+
+    .password {
+      color: palevioletred;
+
+    }
+    .ssbt{
+      margin-left: 30px;
+      margin-top: 7px;
+      color: white;
+    }
+
+    .sign:hover{
+      text-decoration: underline green;
+   
+    
+      
+    }
+
+    .fp{
+      margin: 11px 0px 0px 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mycard">
+    <div class="img"><img src="logo.png" alt="" />Spotify</div>
+    <div>
+      <div class="sign" c>SIGN IN</div>
+    <div class="sign">SIGN UP</div>
+    </div>
+    
+    <input class="my-input" type="text" placeholder="Username" />
+    <input class="my-input" type="text" placeholder="Password" />
+    <div class="ssbt">
+      <input type="checkbox" name="check" id="check1" />
+    <label for="check">Stay Signed In</label>
+    </div>
+    
+    <button class="my-btn">SIGN IN</button>
+    <div class="fp">
+      <a href="#" class="password">Forget Password?</a>
+    </div>
+    
+  </div>
+</body>
+
+</html>
